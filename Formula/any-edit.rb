@@ -1,22 +1,22 @@
 class AnyEdit < Formula
   desc "Edit Anytype documents in an external editor"
   homepage "https://github.com/stevelr/anytype"
-  version "0.1.2"
+  version "0.1.3"
   if OS.mac? && Hardware::CPU.arm?
-      url "https://github.com/stevelr/anytype/releases/download/any-edit-v0.1.2/any-edit-aarch64-apple-darwin.tar.xz"
-      sha256 "9cad75ccf652b78bef131ce38d852f25663c74815f340c272e62ffc7574e1b1b"
+      url "https://github.com/stevelr/anytype/releases/download/any-edit-v0.1.3/any-edit-aarch64-apple-darwin.tar.xz"
+      sha256 "01d145420a609b03cb6b1db33d59b2f307a584256d63b50eec5214cb6fe05a7f"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/stevelr/anytype/releases/download/any-edit-v0.1.2/any-edit-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "dc8c086062e69c7399e618ab1e9d51eb26e48fbe01c9e4be4a4c588f186b22f9"
+      url "https://github.com/stevelr/anytype/releases/download/any-edit-v0.1.3/any-edit-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "d1291d2210a27f7b8af882f28b248341ec487b25a139d4773a85835c4c18303c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stevelr/anytype/releases/download/any-edit-v0.1.2/any-edit-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "3667f2ce4567432a5d76122ddd88dc7af5760cc47899159360bfe6ee6ecc66c9"
+      url "https://github.com/stevelr/anytype/releases/download/any-edit-v0.1.3/any-edit-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "961244f32a405b170d37af6fc0f2939125589d1afc8b6b876ea635e14901cc6a"
     end
   end
-  license any_of: ["MIT", "Apache-2.0"]
+  license "Apache-2.0"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":      {},
