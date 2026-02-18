@@ -1,19 +1,19 @@
 class AnytypeRpc < Formula
   desc "Anytype gRPC client"
   homepage "https://github.com/stevelr/anytype"
-  version "0.3.0"
+  version "0.3.1"
   if OS.mac? && Hardware::CPU.arm?
-      url "https://github.com/stevelr/anytype/releases/download/anytype-rpc-v0.3.0/anytype-rpc-aarch64-apple-darwin.tar.xz"
-      sha256 "c668ebc39528eb1bf18d54edf9354d0b1d80fa2d9e7e97bbe471ad68a6bb5579"
+      url "https://github.com/stevelr/anytype/releases/download/anytype-rpc-v0.3.1/anytype-rpc-aarch64-apple-darwin.tar.xz"
+      sha256 "1737d49f764286cbb3857d886b2f06d4c069f3d053ce388d4c032b93f6719733"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/stevelr/anytype/releases/download/anytype-rpc-v0.3.0/anytype-rpc-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "972155ce6a7532c59fac446982b3ca255ec27cd420ae813d8b98abd6896f6905"
+      url "https://github.com/stevelr/anytype/releases/download/anytype-rpc-v0.3.1/anytype-rpc-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "e56d348450de160867dfe8a84bdf4ac17cce7247016da354dbab70c4fa97b8b1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stevelr/anytype/releases/download/anytype-rpc-v0.3.0/anytype-rpc-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "d42a10f8691c97ac3faa63ffd811d783098071a7ae44082d537291704f9c4c99"
+      url "https://github.com/stevelr/anytype/releases/download/anytype-rpc-v0.3.1/anytype-rpc-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "ab3a9be887732afe1c566f193b476b55448f874da829022ed33511235cfb03b8"
     end
   end
   license "Apache-2.0"
