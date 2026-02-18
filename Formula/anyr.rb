@@ -1,19 +1,19 @@
 class Anyr < Formula
   desc "CLI for Anytype - list, search, and perform CRUD operations on Anytype objects."
   homepage "https://github.com/stevelr/anytype"
-  version "0.4.0"
+  version "0.4.1"
   if OS.mac? && Hardware::CPU.arm?
-      url "https://github.com/stevelr/anytype/releases/download/anyr-v0.4.0/anyr-aarch64-apple-darwin.tar.xz"
-      sha256 "30d2b69b3358276a6ec2b837fd10800617ec76373d3c9a8af9bbccb614094e1f"
+      url "https://github.com/stevelr/anytype/releases/download/anyr-v0.4.1/anyr-aarch64-apple-darwin.tar.xz"
+      sha256 "56de6a4b14290ee4c9cf4c23aeb63b163a5e8c6145231371c8fbb10f3c33fc80"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/stevelr/anytype/releases/download/anyr-v0.4.0/anyr-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "70ba78a2cf6fa212cb070d7956adade7f7ac67a3cee1353bf2522f004e313dab"
+      url "https://github.com/stevelr/anytype/releases/download/anyr-v0.4.1/anyr-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "37c7b2c10e0a09813d97cae41363b91880e5931da6694a6a2dd1d3d32d065553"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stevelr/anytype/releases/download/anyr-v0.4.0/anyr-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "1e554b94511f3cb74b03eb566e6887536ace1f2d5f5aadba422f51dffa9055ed"
+      url "https://github.com/stevelr/anytype/releases/download/anyr-v0.4.1/anyr-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "671e079f64c026c14558f4699e847d973d9b9c2648b00925f3102c0eeaf28d3e"
     end
   end
   license "Apache-2.0"
