@@ -1,19 +1,19 @@
 class Anytype < Formula
   desc "An ergonomic Anytype API client in rust"
   homepage "https://github.com/stevelr/anytype"
-  version "0.3.1"
+  version "0.3.2"
   if OS.mac? && Hardware::CPU.arm?
-      url "https://github.com/stevelr/anytype/releases/download/anytype-v0.3.1/anytype-aarch64-apple-darwin.tar.xz"
-      sha256 "19ac709893d447d78aa90066c83e72c1883748397199aae39753858a088ec742"
+      url "https://github.com/stevelr/anytype/releases/download/anytype-v0.3.2/anytype-aarch64-apple-darwin.tar.xz"
+      sha256 "88699b0a8a2eb3db5cf1e1f6f5668897adf48cb215a1042379d287f1d2fe3c8a"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/stevelr/anytype/releases/download/anytype-v0.3.1/anytype-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "fc4622da4d2a16188e3b7cc5029bde57511d57da774caf96905d311a733c6111"
+      url "https://github.com/stevelr/anytype/releases/download/anytype-v0.3.2/anytype-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "11eaf08d8fc0ec46df91348d0ecff08a02b0f89634fc517b05a4e0a0f4806e93"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stevelr/anytype/releases/download/anytype-v0.3.1/anytype-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "76f45b2dc54b4e610e731fb8476e65e1f19876bf84bf062c7a46e87eed8dd711"
+      url "https://github.com/stevelr/anytype/releases/download/anytype-v0.3.2/anytype-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "d5385f66b1cfd0e6d95063fda3829303e66e553a805c28eda2fc2fdc071d569e"
     end
   end
   license "Apache-2.0"
